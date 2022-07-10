@@ -82,7 +82,7 @@ RUN apt-get update && \       # Actualizar paquetes y limpiar
 # notar que ya estamos ejecutando COMANDOS DE R dentro del Docker
 
 RUN R -e "install.packages(pkgs=c('shiny','tidyverse',
-'flexdashboard', 'leaflet', 'sf', 'ggalluvial', 
+'flexdashboard', 'sf', 'ggalluvial', 
 'plotly', 'rmarkdown'), repos='https://cran.rstudio.com/')" 
 
 RUN R -e "install.packages(pkgs=c('devtools'), 
